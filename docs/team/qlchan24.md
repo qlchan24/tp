@@ -31,7 +31,7 @@ Given below are my contributions to the project.
 
 * **Project management**:
   * Created the new product name
-  * Managed v1.2 release on GitHub
+  * Managed v1.2, v1.4 release on GitHub
 
 * **Enhancements to existing features**:
   * Refactored the class name and fields of the Person class into the Supplier class, together with the refactoring of existing test cases and the creation of new ones, followed by the removal of all traces of the original Person class in the documentation and comments.
