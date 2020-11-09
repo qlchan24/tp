@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Developer Guide
+Team: W14-4
 ---
 
 ## Introduction
@@ -532,7 +533,7 @@ The sequence diagrams below demonstrate the workflow in the deletion feature.
 
     Using the `targetType` attribute, the execution is now classified as either Supplier-related product deletion (`ps`) or Warehouse-related product deletion (`pw`). <br>
 
-    Based on the classification, the model will again retrieve the relevant displayed list of warehouse/supplier via `model#getFilteredWarehouseList()`/`model#getFilteredSupplierList()`. <br>
+    Based on the classification, the model will again retrieve the relevant displayed list of warehouse/supplier via `model#getFilteredWarehouseList()` / `model#getFilteredSupplierList()`.
 
     It then locates the respective warehouse/supplier entry at the `INDEX` passed. A product in this entry is to be deleted.
 
@@ -1765,14 +1766,14 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
     is equivalent to typing `update ct/w` after this command `assignmacro a/uw cs/update ct/w` has been executed)
 
 ### Command Prefix
-<div markdown="span" class="alert alert-info">:information_source:  Note: Command links are directed to
-supplier by default.
+<div markdown="span" class="alert alert-info">:information_source:  Note: Commands common to Supplier and
+Warehouse are directed to Supplier by default.
 </div>
 
 |Prefix   |Meaning  |Used in the following Command(s)|
 | ------- |-------- | ------------ |
 |a/ |Alias |[Assign Macro](UserGuide.html#assigning-macro-to-selected-command-string-assignmacro)|
-|addr/ |Address |[Add](UserGuide.html#adding-a-warehouse--add), [Edit](UserGuide.html#editing-a-supplier--edit) |
+|addr/ |Address |[Add](UserGuide.html#adding-a-warehouse--add), [Edit](UserGuide.html#editing-a-warehouse--edit) |
 |cs/ |Command String |[Assign Macro](UserGuide.html#assigning-macro-to-selected-command-string-assignmacro)|
 |ct/ |Command Type |[Add](UserGuide.html#adding-a-supplier--add), [Delete](UserGuide.html#deleting-a-supplier--delete), [Edit](UserGuide.html#editing-a-supplier--edit), [Find](UserGuide.html#finding-relevant-suppliers-find), [Update](UserGuide.html#updating-the-quantity-andor-tags-of-a-product-sold-by-a-supplier-update), [View](UserGuide.html#viewing-a-specific-supplier-view) |
 |e/ |Email Address |[Add](UserGuide.html#adding-a-supplier--add), [Edit](UserGuide.html#editing-a-supplier--edit) |
@@ -1926,7 +1927,7 @@ All `index` referred to in this section refers to index in supplier or warehouse
 
 1. Edit command format: `edit ct/s i/INDEX [n/NAME] [p/PHONE] [e/EMAIL] [r/REMARK]`
 
-   1. Prerequisites: Suppliers in CLI-nic does not have a supplier named Alice Ptd Ltd (with the exception of test case to test for duplicated supplier).
+   1. Prerequisites: Suppliers in CLI-nic does not have a supplier named Alice Ptd Ltd.
 
    1. Test case: Minimal information e.g. `edit ct/s i/1 n/Alice Pte Ltd`<br>
       Expected: Edits a supplier in index 1 on supplier list to have a name "Alice Pte Ltd".
@@ -1949,7 +1950,7 @@ All `index` referred to in this section refers to index in supplier or warehouse
 
 1. Edit command format: `edit ct/w i/INDEX [n/NAME] [p/PHONE] [addr/ADDRESS] [r/REMARK]`
 
-   1. Prerequisites: Warehouses in CLI-nic does not have a warehouse named Alice Warehouse (with the exception of test case to test for duplicated warehouse).
+   1. Prerequisites: Warehouses in CLI-nic does not have a warehouse named Alice Warehouse.
 
    1. Test case: Minimal information e.g. `edit ct/w i/1 n/Alice Warehouse` <br>
       Expected: Edits a warehouse in index 1 on warehouse list to have a name "Alice Warehouse".
