@@ -1,12 +1,10 @@
 package seedu.clinic.logic.commands;
 
 import static seedu.clinic.logic.commands.CommandTestUtil.assertCommandSuccess;
-import static seedu.clinic.testutil.Assert.assertThrows;
 import static seedu.clinic.testutil.TypicalMacro.getTypicalUserMacros;
 
 import org.junit.jupiter.api.Test;
 
-import seedu.clinic.logic.commands.exceptions.CommandException;
 import seedu.clinic.model.Clinic;
 import seedu.clinic.model.CommandHistory;
 import seedu.clinic.model.Model;
