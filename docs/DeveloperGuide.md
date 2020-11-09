@@ -840,7 +840,7 @@ The list macros feature allows users to be able to view all presently saved macr
 
 #### How it is implemented
 
-The list macros feature is facilitated by the `ListMacroCommand`    , whose job is to retrieve to list of macros and process it into a suitable format to be displayed to the user.
+The list macros feature is facilitated by the `ListMacroCommand`, whose job is to retrieve to list of macros and process it into a suitable format to be displayed to the user.
 
 Given below is an example usage scenario
 
@@ -853,7 +853,7 @@ The user decides to check what macros he/she has saved before. The user does thi
 1. Execution
 
    `LogicManager` will then call `ListMacroCommand#execute` with the `Model` instance. `ListMacroCommand#execute` will retrieve the macro list from the `Model`.
-If the list is empty, an exception is thrown which results in a message displayed on the GUI notifying the user that there are no presently saved macros.
+If the list is empty, the method will terminate by returning a `CommandResult` with a message to notify the user that there are no presently saved macros.
 Otherwise, the list of macros will be formatted into a readable format.
 
 1. Result display
