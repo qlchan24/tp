@@ -18,7 +18,7 @@ Given below are my contributions to the project.
   * Highlights: This feature had underwent several changes in the fields that it accepts, which meant re-implementations of various parts of the code. Another challenge presented was that the prefixes required by the command differs whether the product exists in the warehouse/supplier, hence it required analysis of design alternatives so as not to create dependency between the parser and the model.
   * Credits: The feature was originally split into separate commands for supplier and warehouse, as they originally had different fields for the products listed.
   My teammate Zhenlin did the supplier-side command, while I did the warehouse-side. I eventually integrated the 2 commands together into 1 command and implemented access to all fields of products for both suppliers and warehouses as part of a revamp of our commands.
-
+<div style="page-break-after: always;"></div>
 * **New Feature**: Assigning, deleting and listing of macros
   * What it does: Allows users to save full or partial commands under custom aliases, and be able to list or delete them with ease.
   * Justification: This feature further builds on the efficiency of the CLI-based commands for quick-typists by allowing users to create shorthand commands or ones that they are more comfortable with.
