@@ -502,7 +502,7 @@ The sequence diagrams below demonstrate the workflow in the deletion feature.
 
     Using the `targetType` attribute, the execution is first classified as either Supplier deletion (`s`) or Warehouse deletion (`w`). <br>
 
-        Base on the classification, the model will retrieve the relevant displayed list of warehouse/supplier via `model#getFilteredWarehouseList()`/`model#getFilteredSupplierList()`. <br>
+    Base on the classification, the model will retrieve the relevant displayed list of warehouse/supplier via `model#getFilteredWarehouseList()`/`model#getFilteredSupplierList()`.
 
     It then locates the warehouse/supplier entry that user wants to delete via the `INDEX` passed in.
 
@@ -533,7 +533,7 @@ The sequence diagrams below demonstrate the workflow in the deletion feature.
 
     Using the `targetType` attribute, the execution is now classified as either Supplier-related product deletion (`ps`) or Warehouse-related product deletion (`pw`). <br>
 
-    Based on the classification, the model will again retrieve the relevant displayed list of warehouse/supplier via `model#getFilteredWarehouseList()` / `model#getFilteredSupplierList()`.
+    Based on the classification, the model will again retrieve the relevant displayed list of warehouse/supplier via `model#getFilteredWarehouseList()` or `model#getFilteredSupplierList()` .
 
     It then locates the respective warehouse/supplier entry at the `INDEX` passed. A product in this entry is to be deleted.
 
