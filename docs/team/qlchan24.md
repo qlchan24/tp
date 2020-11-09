@@ -34,9 +34,9 @@ Given below are my contributions to the project.
   * Managed v1.2 release on GitHub
 
 * **Enhancements to existing features**:
-  * Refactored the class name and fields of the Person class into the Supplier class together with new test cases and removed traces of the original Person class in the documentation.
+  * Refactored the class name and fields of the Person class into the Supplier class, together with the refactoring of existing test cases and the creation of new ones, followed by the removal of all traces of the original Person class in the documentation and comments.
   * Added common test utility constants and classes.
-  * Fixed bugs in code outside implemented commands (examples: [#117](https://github.com/AY2021S1-CS2103-W14-4/tp/pull/117), [#211](https://github.com/AY2021S1-CS2103-W14-4/tp/pull/211))
+  * Found and fixed bugs in code outside implemented commands (examples: [#117](https://github.com/AY2021S1-CS2103-W14-4/tp/pull/117), [#211](https://github.com/AY2021S1-CS2103-W14-4/tp/pull/211))
 
 * **Documentation**:
   * User Guide:
@@ -49,4 +49,4 @@ Given below are my contributions to the project.
 
 * **Community**:
   * PRs reviewed (with non-trivial review comments): (examples: [TP comments dashboard](https://nus-cs2103-ay2021s1.github.io/dashboards/contents/tp-comments.html#71-chan-qin-liang-qlchan24-34-comments))
-  * Contributed to forum discussions (examples: [130](https://github.com/nus-cs2103-AY2021S1/forum/issues/130), [159](https://github.com/nus-cs2103-AY2021S1/forum/issues/159))
+  * Contributed to forum discussions (examples: [#130](https://github.com/nus-cs2103-AY2021S1/forum/issues/130), [#159](https://github.com/nus-cs2103-AY2021S1/forum/issues/159))
